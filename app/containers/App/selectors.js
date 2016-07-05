@@ -15,6 +15,8 @@ const selectLocationState = () => {
   };
 };
 
+const selectNumbersSelector = state => state.numbers.entries;
+
 export {
   selectLocationState,
 };
