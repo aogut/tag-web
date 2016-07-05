@@ -2,14 +2,21 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
+import { saveNumbers } from './actions';
+
 import NumberEntryForm from 'components/NumberEntryForm';
 
 class NumberEntryPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleSavingNumbers = this.handleSavingNumbers.bind(this);
+  }
 
   handleSavingNumbers(numbers) {
     console.log('handleSavingNumbers');
     console.log(numbers.map(e => e.numeral + '/tags: '+ e.tags));
-    this.onSavingNumbers(numbers);
+    this.props.onSavingNumbers(numbers);
   }
 
   render() {

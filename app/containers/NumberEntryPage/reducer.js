@@ -7,6 +7,8 @@ import { fromJS } from 'immutable';
 const initialState = fromJS([]);
 
 function numberEntryReducer(state = initialState, action) {
+  console.log('-- numberEntryReducer state', state);
+  console.log('-- numberEntryReducer action', action);
   switch (action.type) {
     case SAVE_NUMBERS:
       return [
