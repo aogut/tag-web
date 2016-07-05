@@ -1,5 +1,5 @@
 {
-  "name": "tag web",
+  "name": "tag-web",
   "version": "3.0.0",
   "description": "tag a number using react-boilerplate",
   "repository": {
@@ -7,7 +7,7 @@
     "url": "git://github.com/aogut/tag-web"
   },
   "engines": {
-    "npm": ">=3"
+    "npm": ">=1"
   },
   "author": "aogut",
   "license": "MIT",
